@@ -18,7 +18,7 @@
     "bcrypt": "^1.0.3",
     "bluebird": "^3.4.7",
     "body-parser": "^1.16.0",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "card-validator": "^4.3.0",
     "classnames": "^2.2.5",
     "compression": "^1.6.2",
