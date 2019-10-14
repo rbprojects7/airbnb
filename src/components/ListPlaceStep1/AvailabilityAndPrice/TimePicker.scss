@@ -1,0 +1,14 @@
+.rc-time-picker-panel-select{
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  height: 9px;
+  width: 5px;
+  border-radius: 8px;
+  background: #e3e3e3;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,.2);
+  border-radius: 8px;
+}

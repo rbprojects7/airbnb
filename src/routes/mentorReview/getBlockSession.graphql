@@ -1,0 +1,10 @@
+query getBlockSession ($blockUniqueId: Int!){
+    getBlockSession(blockUniqueId: $blockUniqueId){
+     id
+     date
+     startTime
+     endTime
+     reservationId
+     blockUniqueId
+    }
+  }

@@ -1,0 +1,6 @@
+{
+    "name": "CancelByBlock",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./CancelByBlock.js"
+}

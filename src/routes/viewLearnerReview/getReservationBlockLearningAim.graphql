@@ -1,0 +1,12 @@
+query getReservationBlockLearningAim ($blockUniqueId: Int!){
+  getReservationBlockLearningAim(blockUniqueId: $blockUniqueId){
+   id
+   hostId
+   guestId
+   reservationId
+   listId
+   value
+   blockId
+   blockUniqueId
+  }
+}

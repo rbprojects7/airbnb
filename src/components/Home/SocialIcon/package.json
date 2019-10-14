@@ -1,0 +1,6 @@
+{
+    "name": "SocialIcon",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./SocialIcon.js"
+}

@@ -1,0 +1,46 @@
+.arrayWrapper {
+  .inputWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .input {
+      display: flex;
+      align-items: center;
+
+      @media screen and (-webkit-min-device-pixel-ratio: 0) { // checks if chrome 29.0 and higher and (min-resolution: .001dpcm)
+        textarea {
+          overflow-y: scroll;
+        }
+      }
+
+      textarea {
+        resize: none;
+
+        &::-webkit-scrollbar {
+          height: 9px;
+          width: 5px;
+          border-radius: 8px;
+          background: #e3e3e3;
+          transition: all 0.3s ease;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  .inputAddon {
+    padding: 4px;
+    cursor: pointer;
+  }
+  .icon {
+    color: #00B0CD; // put into variables
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,13 @@
+query getChildData($childId: Int!) {
+  getChildData(childId: $childId) {
+    id
+    parentId
+    email
+    preferredName
+    firstName
+    lastName
+    birthday
+    preferences
+    childId
+  }
+}

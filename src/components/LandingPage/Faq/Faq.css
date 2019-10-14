@@ -1,0 +1,107 @@
+
+.landingContainer {
+  max-width: 1080px;
+  width: 100%;
+  display: block;
+  margin: 50px auto 0 auto;
+}
+
+.bannerTitle {
+  font-weight: 800;
+  margin: 0px;
+  word-wrap: break-word;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: normal;
+  color: #484848;
+  padding-top: 6px;
+}
+
+.bannerSubTitle {
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.bannerDescription {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+}
+
+.qaSpace {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.faqTitle {
+  font-weight: 600;
+  word-wrap: break-word;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: normal;
+  color: #484848;
+}
+
+.faqDescription {
+  word-wrap: break-word;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: #484848;
+  font-weight: normal;
+}
+
+.faqBorder {
+  border-bottom: solid 1px #ebebeb !important;
+}
+
+.spaceTop4 {
+  margin-top: 24px;
+}
+
+.space6 {
+  margin-bottom: 48px;
+}
+
+.noPadding {
+  padding: 0px;
+}
+
+.button {
+  border: 1px solid #00B0CD;
+  border-radius: 4px;
+  background: #00B0CD;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.3333333;
+  cursor: pointer;
+}
+
+.button:hover, .button:focus, .button:active,
+.button:active:hover, .button:active:focus {
+  border-color: #00B0CD;
+  background-color: #00B0CD;
+  color: #ffffff;
+}
+
+.buttonWidth {
+  max-width: 500px;
+}
+
+.btnRight {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .smAlign {
+    padding: 0;
+    margin-top: 18px;
+  }
+  .desktopView{
+    display: none;
+  }
+}

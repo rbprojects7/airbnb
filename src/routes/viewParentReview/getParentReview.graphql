@@ -1,0 +1,35 @@
+query getParentReview($reservationId: Int){
+    getParentReview(reservationId: $reservationId){
+        id
+        reservationId
+        listId
+        authorId
+        userId
+        reviewContent
+        rating
+        parentId
+        automated
+        createdAt
+        status
+        isAdmin
+        yourReviewsCount
+        reviewsCount
+        authorData {
+        firstName
+        lastName
+        displayName
+        dateOfBirth
+        picture
+        location
+        reviewsCount
+        }
+        userData {
+        firstName
+        lastName
+        displayName
+        dateOfBirth
+        picture
+        location
+        }
+    }
+}

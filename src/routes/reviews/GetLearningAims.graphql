@@ -1,0 +1,7 @@
+query GetLearningAims($listId: Int!) {
+  getLearningAims(listId: $listId) {
+    id
+    listId
+    value
+  }
+}

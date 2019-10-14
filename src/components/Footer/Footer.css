@@ -1,0 +1,179 @@
+@import '../variables.css';
+.root {
+  background: #E9EEEF;
+  color: #333;
+  padding: 0px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px;
+  max-width: var(--max-container-width);
+  border-top: 1px solid #dce0e0;
+}
+
+.footerSectionContainer {
+  /* max-width: var(--max-content-width); */
+  margin: 0 auto;
+  position: relative;
+  padding: 48px 0px;
+  display: block;
+  line-height: 1.43;
+  font-size: 14px;
+}
+
+.dropDownSection {
+  padding-left: 0px;
+}
+
+.noPadding {
+  padding: 0px;
+}
+
+.pullRight {
+  float: right;
+}
+
+.horizontalLineThrough {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 15px 0px;
+  width: 100%;
+  color: #767676;
+  text-align: center;
+  font-size: 14px;
+}
+
+.shareIcon {
+  color: #000000;
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 20px;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.shareIcon:hover, .shareIcon:hover:focus .shareIcon:hover:focus {
+  color: #767676;
+}
+
+.textLink {
+  color: #646F79;
+  font-weight: normal;
+  padding: 0px 0px;
+  margin: 0px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.textLink:hover, .textLink:focus, .textLink:hover:focus {
+  color: #646F79;
+}
+
+.formControlSelect {
+  height: 53px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  font-size: 19px;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #DBDBDB;
+  background-color: #fff;
+  color: #484848;
+  line-height: 24px;
+  /*Drop Down Caret Icon*/
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 6px, 5px 6px, 1px 1.5em;
+  background-repeat: no-repeat;
+  /*Drop Down Caret Icon*/
+}
+
+.listContainer {
+  padding: 0px;
+  margin-top: 12px;
+  list-style-type: none;
+}
+
+.landingLabel {
+  color: #00B0CD;
+  font-size: 14px;
+  display: block;
+  line-height: 30px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.copyrightSection {
+  margin: 0px;
+  background: #00B0CD;
+  padding: 15px 15px;
+}
+
+.maxWidthRow {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.copyrightSectionText {
+  color: #000000 ;
+  font-weight: normal;
+  padding: 0px 0px;
+  margin: 0px;
+  line-height: 14px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .xsHidden {
+    display: none;
+  }
+  .dropDownSection {
+    padding-left: 15px;
+  }
+  .copyrightSection {
+    padding: 0px 15px;
+  }
+  .footerContentWidth{
+    width: 220px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .smBottom {
+    margin-bottom: 18px;
+  }
+  .copyrightSection {
+    padding: 10px 15px;
+  }
+}
+
+.captionLabel {
+  font-size: 18px;
+  line-height: 26px;
+  color: #00B0CD;
+}
+
+.captionText {
+  font-size: 14px;
+  line-height: 22px;
+  color: #646F79;
+}
+
+.footerBottomSection {
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+
+.footerContentWidth{
+  width: 330px;
+}
+
+.footerContentPadding{
+  padding-right: 5px;
+}

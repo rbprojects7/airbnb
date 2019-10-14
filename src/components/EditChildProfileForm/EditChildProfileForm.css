@@ -1,0 +1,263 @@
+@import '../../components/variables.css';
+@import '../../components/utils.css';
+
+.root {
+  padding: 32px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 500px;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.button {
+
+	border-color: #514EA3;
+    background-color: #514EA3;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+}
+
+.button:hover {
+  background: rgba(54, 50, 119, 0.8);
+}
+
+.button:focus {
+  border-color: #0074c2;
+  box-shadow: 0 0 8px rgba(0, 116, 194, 0.6);
+}
+
+.btnPrimary {
+    border-color: #6C68C6;
+    background-color: #6C68C6;
+    color: #fff;
+}
+
+.btnlarge{
+
+	    padding: 9px 27px;
+  }
+
+.btnPrimary:hover, .btnPrimary:focus, .btnPrimary:active,
+.btnPrimary:active:hover, .btnPrimary:active:focus {
+  border-color: #514EA3 !important;
+  background-color: #514EA3 !important;
+  color: #fff;
+}
+
+.btnPrimaryBorder {
+    border-color: #6C68C6;
+    color: #6C68C6;
+    background-color: #fff;
+}
+
+.btnPrimaryBorder:hover, .btnPrimaryBorder:focus, .btnPrimaryBorder:active,
+.btnPrimaryBorder:active:hover, .btnPrimaryBorder:active:focus {
+  border-color: #514EA3;
+  color: #514EA3;
+  background-color: #fff;
+}
+
+.btnSmall {
+  padding: 5px 0px;
+}
+
+.panelHeader {
+  border-radius: 0;
+  width: 100%;
+  display: block;
+  color: #484848;
+  font-size: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dce0e0;
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.formControlInput {
+  padding: 10px 35px 10px 10px;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  color: #484848;
+  font-weight: normal;
+}
+
+.formControlSelect {
+  padding: 10px 32px 10px 10px;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  color: #484848;
+  font-weight: normal;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.formSection {
+  overflow: hidden;
+}
+
+.captionText {
+  font-size: 16px;
+  color: #484848;
+  margin: 6px 0px;
+}
+
+.labelText {
+  font-size: 14px;
+  color: #767676;
+  margin: 6px 0px;
+  line-height: 1.43;
+  font-weight: normal;
+}
+
+.modalCaptionLink {
+  color: #008489;
+}
+
+.modalCaptionLinkLarge {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.modalCaptionLink:hover,
+.modalCaptionLink:focus {
+  color: #008489;
+  text-decoration: underline;
+}
+
+.spaceTop3 {
+  margin-top: 18px;
+}
+.formControlSelect {
+
+  width: 100%;
+}
+.textRight {
+  text-align: right;
+}
+
+.textAlign {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .birthdayContent{
+    font-size: 13px;
+    padding: 10px 0 0 0;
+  }
+  .formControlSelect {
+  
+    width: 100%;
+  }
+  .selectMobileTWo{
+    font-size: 13px;
+    margin: 10px 0 0 0;
+  }
+  .birthdayContentTwo{
+    font-size: 13px;
+    padding: 20px 0 0 0;
+  }
+  .MobileBirthday{
+    padding: 0 0 0 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .smSpace {
+    margin-top: 0px;
+  }
+
+  .textAlign {
+    text-align: left;
+  }
+
+  .formGroup {
+    margin-bottom: 6px;
+  }
+
+  .hideForSm {
+    display: none;
+  }
+
+  .childProfileNotes{
+    height: 84px !important;
+    padding: 13px 6px 15px 10px !important;
+    margin-bottom: 20px;
+  }
+  .buttonForSm{
+    width: 100%
+  }
+  .preferredMobile{
+    margin-bottom: 30px;
+  }
+  .marginBottomMobile{
+    margin-bottom: 0px !important;
+  }
+  .labelMobile{
+    margin: 0 !important;
+  }
+  .birthdayMargin{
+    margin-bottom: 10px;
+  }
+  .spaceTopMobile{
+    margin-top: 30px !important;
+  }
+
+
+.MobileBirthday{
+  padding: 0 0 0 15px;
+}
+.paddingLeftMobile{
+  padding-left: 0;
+}
+.leftOne{
+  float: left;
+  width: 29%;
+  margin: 0 10px 0 0;
+}
+.birthdayContent{
+  font-size: 13px;
+  padding: 10px 0 0 0;
+}
+.formControlSelect {
+
+  width: 100%;
+}
+.selectMobileTWo{
+  font-size: 13px;
+  margin: 10px 0 0 0;
+}
+.birthdayContentTwo{
+  font-size: 13px;
+  padding: 20px 0 0 0;
+}
+}

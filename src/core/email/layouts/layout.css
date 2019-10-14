@@ -1,0 +1,17 @@
+table {
+  border-collapse: collapse !important;
+}
+tbody {
+  border-spacing: 0 !important;
+  border: none !important;
+  border-collapse: collapse !important;
+}
+tr {
+  border: none !important;
+  margin: 0 !important;
+  border-spacing: 0 !important;
+  padding: 0 !important;
+}
+td {
+  padding: 0 !important;
+}

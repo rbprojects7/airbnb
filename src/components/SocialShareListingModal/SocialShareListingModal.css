@@ -1,0 +1,208 @@
+@import '../../components/variables.css';
+
+.root {
+  padding: 32px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 380px;
+}
+
+/** AirBnb - Begin **/
+
+.logInModalContainer {
+  max-width: 450px;
+}
+
+.logInModalBody {
+  padding: 20px;
+}
+
+.lineThrough {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 12px 0px;
+  width: 100%;
+  color: #767676;
+  text-align: center;
+  font-size: 14px;
+}
+
+.lineThrough::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  margin-top: -5px;
+  margin-left: -20px;
+  width: 40px;
+  height: 10px;
+  background-color: #fff;
+  content: '';
+}
+
+.lineThrough::after {
+  position: absolute;
+  top: 49%;
+  z-index: -2;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  content: '';
+}
+.panelHeader{
+  color: #fff;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dce0e0;
+    background: linear-gradient(to right, #FF6275 10%, #FF6B8F 20%, #FF6B90 30%, #FF8D6C 75%, #FFB73E 100%);
+}
+.formGroup {
+  margin-bottom: 6px;
+}
+
+.formSection {
+  overflow: hidden;
+}
+
+
+.noPadding {
+  padding: 0px;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+
+.modalCaptionLink {
+    color: #008489;
+}
+
+.modalCaptionLinkLarge {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.modalCaptionLink:hover, .modalCaptionLink:focus {
+    color: #008489;
+    text-decoration: underline;
+}
+
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 16px;
+  width: 100%;
+  outline: 0;
+  border: 1px solid #373277;
+  border-radius: 4px;
+  background: #373277;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.3333333;
+  cursor: pointer;
+}
+
+.btnPrimary {
+    border-color: #ff5a5f;
+    background-color: #ff5a5f;
+    color: #fff;
+}
+
+.btnPrimary:hover, .btnPrimary:focus {
+  border-color: #ff7e82;
+  background-color: #ff7e82;
+  color: #fff;
+}
+
+.btnPrimaryBorder {
+    border-color: #ff5a5f;
+    color: #ff5a5f;
+    background-color: #fff;
+}
+
+.btnPrimaryBorder:hover, .btnPrimaryBorder:focus {
+  border-color: #ff7e82;
+  color: #ff7e82;
+  background-color: #fff;
+}
+
+.btnSmall {
+  padding: 5px 0px;
+}
+
+.displayIcon{
+  display: inline-block;
+  margin-right: 5px;
+}
+.textCenter{
+  text-align: center;
+  display: inline;
+}
+
+@media screen and (max-width: 640px){
+  .logInModalContainer{
+    margin: 0px auto;
+}
+}
+
+.clipBoardBtn{
+  float: right;
+  margin-bottom: 6px;
+  vertical-align: top;
+  margin-top: 7px;
+}
+
+.space4{
+  margin-top: 12px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.tableCell {
+  display: table-cell;
+  float: none;
+}
+
+.inputSection{
+  width: 37%;
+  vertical-align: middle;
+}
+
+.searchButton{
+  border-radius: 0px !important;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+
+.btnFontSize{
+  font-size: 16px !important;
+}
+
+
+.noPaddingRight{
+  padding-right: 0;
+}
+
+.noPaddingLeft{
+  padding-left: 0;
+}
+
+.clipBoard{
+  /* margin-left: -8px;
+  background: #eee; */
+  vertical-align: middle;
+  /* border: 1px solid #aaa; */
+}

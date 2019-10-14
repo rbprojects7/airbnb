@@ -1,0 +1,58 @@
+.landingContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.datesContainer {
+    padding-left: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.button:hover {
+  background: rgba(54, 50, 119, 0.8);
+}
+
+.button:focus {
+  border-color: #0074c2;
+  box-shadow: 0 0 8px rgba(0, 116, 194, 0.6);
+}
+
+.btnPrimary {
+    border-color: #6C68C6;
+    background-color: #6C68C6;
+    color: #fff;
+}
+
+.btnlarge{
+    padding: 7px 30px;
+  }
+
+.btnPrimary:hover, .btnPrimary:focus, .btnPrimary:active,
+.btnPrimary:active:hover, .btnPrimary:active:focus {
+  border-color: #514EA3 !important;
+  background-color: #514EA3 !important;
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+query learnerReviews ($blockUniqueId: Int!,$id: Int,$reservationId: Int) {
+  learnerReviews(blockUniqueId: $blockUniqueId, id: $id,reservationId:$reservationId){
+   id
+   userId
+   reservationId
+   isParent
+   childId
+   blockUniqueId
+   prevId
+   nextId
+   learnerName
+   learnerDOB
+   isReview
+   }
+}

@@ -1,0 +1,18 @@
+query getTransactionHistory ($mode: String, $payoutId: Int, $listId: Int, $currentPage: Int){
+  getTransactionHistory(mode: $mode, payoutId: $payoutId, listId: $listId, currentPage: $currentPage){
+    transactionHistoryData {
+      listId
+      amount
+      fees
+      currency
+      learnersParticipated
+      blockId
+      sessionDate
+      userId
+      payoutEmail
+      createdAt
+    }
+    status
+    count
+  }
+}

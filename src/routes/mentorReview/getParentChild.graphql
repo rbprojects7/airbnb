@@ -1,0 +1,14 @@
+query getParentChild ($blockUniqueId: Int!,$id: Int) {
+  getParentChild(blockUniqueId: $blockUniqueId, id: $id){
+   id
+   userId
+   reservationId
+   isParent
+   childId
+   blockUniqueId
+   prevId
+   nextId
+   learnerName
+   learnerDOB
+   }
+}

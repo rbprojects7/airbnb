@@ -1,0 +1,122 @@
+.imageContainer {
+  padding: 0;
+  height: 700px;
+  max-width: 100%;
+  .image{
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .textWrapper {
+    line-height: 26px;
+    border-radius: inherit;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 22px 20px 17px 20px;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85) 100%);
+  }
+  .quote {
+  }
+  .author {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .authorWrapper{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .imageContainer {
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    .image{
+      background-size: cover;
+      background-position: center;
+      margin: 0 20%;
+      display: flex;
+      border-radius: 10px;
+      border: none;
+      height: 700px;
+      background-repeat: no-repeat;
+    }
+    .textWrapper {
+      border-radius: inherit;
+      background-size: contain;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+      padding: 22px 20px 17px 20px;
+      background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85) 100%);
+    }
+    .quote {
+    }
+    .author {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .authorWrapper{
+      margin: 15px 0;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .imageContainer {
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 720px) {
+      .image{
+        margin: 0 0 0 0;
+      }
+    }
+    .image{
+      display: flex;
+      border-radius: 0;
+      border: none;
+      height: 700px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .textWrapper {
+      border-radius: 0;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+      padding: 22px 20px 17px 20px;
+      background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 1) 100%)
+    }
+    .author {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .authorWrapper{
+      margin: 15px 0;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+
+

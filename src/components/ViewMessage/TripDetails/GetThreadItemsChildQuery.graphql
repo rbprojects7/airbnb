@@ -1,0 +1,21 @@
+query getThreadItemsChildQuery($threadId: Int!,$reservationId: Int){
+  getAllThreadItemsChild(threadId: $threadId,reservationId: $reservationId) {
+    childParentData
+    {
+      id
+      userId
+      reservationId
+      childId
+      childName
+      {
+        id
+        parentId
+        firstName
+        lastName
+        birthday
+        childId
+        preferences
+      }
+    }
+  }
+}

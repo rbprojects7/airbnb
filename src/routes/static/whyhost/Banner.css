@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
+.topImageBanner {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  max-height: 600px;
+}
+.gradient{
+  min-height: inherit;
+  position: relative;
+  background: linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.8) 100%);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.desktopView {
+  display: block;
+}
+.mobileView {
+  display: none;
+}
+
+.imageWrapper{
+  display: flex;
+}
+
+.TopBannerHeader {
+  color: #fff;
+  position: relative;
+  padding-bottom: 10px;
+  min-height: 600px;
+}
+
+.middleBannerHeader {
+  color: #fff;
+  position: relative;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  min-height: 600px;
+}
+
+.middleBannerImage {
+  border-radius: 10px;
+}
+
+.middleBannerElement {
+  min-width: 600px;
+}
+
+.imageBanner {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  max-height: 350px;
+}
+
+.imgBlock {
+  height: auto;
+  width: 100%;
+}
+
+.bannerHeader {
+  color: #fff;
+  position: relative;
+  padding-bottom: 10px;
+  min-height: 350px;
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 0;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.topBannerText {
+  position: absolute;
+  left: 10%;
+  right: 0;
+  margin: 0 0;
+  color: #fff;
+}
+
+.middleBannerText {
+  top: 10%;
+  color: #fff;
+  width: 50%;
+  margin-right: 7%;
+  text-align: right;
+  max-width: 1088px;
+}
+
+.topBannerTitle {
+  color: #fff;
+  font-size: 45px;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  line-height: 65px;
+  max-width: 500px;
+}
+
+.topBannerButtonsWrapper{
+  margin-bottom: 60px;
+}
+
+.contentWrapper button span {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.middleBannerTextContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.bannerTitle {
+  font-size: 45px;
+  letter-spacing: -0.8px;
+  font-weight: 700;
+  color: #151B26;
+  line-height: 58px;
+}
+
+.bannerSubTitle {
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.bannerDescription {
+  font-size: 18px;
+  letter-spacing: -0.8px;
+  color: #151B26;
+  line-height: 26px;
+  font-weight: 300;
+  margin-left: 15%;
+}
+
+.bannerTestimonial {
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+  font-style: italic
+}
+
+.learnMoreButton {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.button {
+  border-color: #6C68C6;
+  border-radius: 10px;
+  background: #6C68C6;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.3333333;
+  cursor: pointer;
+  width: 216px;
+  height: 48px;
+}
+
+.button:hover, .button:focus, .button:active,
+.button:active:hover, .button:active:focus {
+  border-color: #514EA3;
+  background-color: #514EA3;
+  color: white;
+}
+
+.btnPrimaryBorder {
+  color: #ffffff;
+  background-color: #6C68C6;
+}
+
+.btnPrimaryBorder:hover, .btnPrimaryBorder:focus, .btnPrimaryBorder:active,
+.btnPrimaryBorder:active:hover, .btnPrimaryBorder:active:focus {
+  border-color: #514EA3;
+  color: #ffffff;
+  background-color: #514EA3;
+}
+
+.linkButton {
+  text-decoration: none;
+  padding: 6px 12px;
+}
+
+.linkButton span {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkButton:hover, .linkButton:focus, .linkButton:active,
+.linkButton:active:hover, .linkButton:active:focus {
+  border-color: #514EA3;
+  color: #ffffff;
+  background-color: #514EA3;
+}
+
+.buttonWidth {
+  max-width: 500px;
+}
+
+.btnRight {
+  margin-left: 50px;
+}
+
+.noPadding {
+  padding: 0px;
+}
+
+@media screen and (max-width: 720px) {
+  .desktopView {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+  }
+  .middleBannerTextContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .learnMoreButton {
+    display: none;
+  }
+  .middleBannerElement {
+    min-width: unset;
+  }
+
+  .middleBannerText{
+    margin: 28px 7%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .bannerDescription{
+    margin: 0;
+    font-size: 16px;
+  }
+  .bannerTitle{
+    margin: 14px 11px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .middleBannerImage {
+    border-radius: unset;
+  }
+  .imageWrapper{
+    display: flex;
+  }
+
+  .TopBannerHeader {
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .bannerText{
+    margin-bottom: 20px;
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    color: #fff;
+  }
+
+  .topBannerText{
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    color: #fff;
+  }
+
+  .contentWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topBannerTitle span{
+    display: flex;
+    text-align: center;
+  }
+
+  .topBannerTitle {
+    line-height: 50px;
+    font-size: 40px;
+    max-width: unset;
+  }
+
+  .gradient{
+    background:linear-gradient(to bottom, transparent 33%, rgba(0,0,0,0.8) 100%)
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .middleBannerText {
+    margin: 28px 0;
+  }
+}
+
+@media screen and (max-width: 883px) {
+  .bannerDescription{
+    margin-left: 30%;
+  }
+}
+/* new css */
+
+.buttonPosition {
+  position: relative !important;
+}

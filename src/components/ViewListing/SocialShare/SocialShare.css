@@ -1,0 +1,10 @@
+@import '../../../components/variables.css';
+
+.displayIcon{
+    display: inline-block;
+    margin-right: 5px;
+}
+.textCenter{
+    text-align: center;
+}
+

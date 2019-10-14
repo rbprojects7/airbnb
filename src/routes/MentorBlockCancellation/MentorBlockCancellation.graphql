@@ -1,0 +1,94 @@
+query getSingleBlock($blockId: Int) {
+    getSingleBlock(blockId: $blockId) {
+        id
+    blockUniqueId
+    price
+    sessionTime{
+      id
+      date
+      startTime
+      endTime
+    }
+    reservationItemCount
+    	reservationItem {	
+      		id
+          guestId
+          isParentEnable
+          guests
+          messageData{
+            id
+          }
+          checkIn
+          checkOut
+          childParentData {
+            id
+            reservationId
+            userId
+            isParent
+            childId
+            childName{
+              id
+              firstName
+              lastName
+            }
+          }
+          cancellationDetails{
+            learnerId
+            sessionId
+          }
+          chosenBlockData {
+          date
+          startTime
+          endTime
+          id
+          blockId        
+      }
+      guestData {
+      profileId
+      firstName
+      lastName
+      displayName
+      picture
+      userData {
+        email
+      }
+    }
+    	}
+    listingItem{
+      id
+      title
+      listingData {
+        currency
+        experienceType
+        cancellationDescription
+      }
+      coverPhoto
+      listPhotos {
+          id
+          name
+      }
+      city
+      state
+      country
+      cancellationPolicy {
+        id
+        listId
+        cancellationType
+        policy {
+          id
+          policyContent
+        }
+      }
+      user{
+        email
+        profile{
+          picture
+          firstName
+          lastName
+          profileId
+        }
+      }
+    }
+        
+    }
+}

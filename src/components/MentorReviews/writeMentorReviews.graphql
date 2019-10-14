@@ -1,0 +1,19 @@
+mutation writeMentorReviews( 
+      $parentId: String!,
+      $childId: Int,
+      $isParentEnable: Boolean,
+      $learningAims: [String],
+      $reservationId: Int,
+      $isReviewed: Boolean,
+      ){
+        writeMentorReviews(
+          parentId: $parentId,
+          childId:  $childId,
+          isParentEnable: $isParentEnable,
+          learningAims: $learningAims,
+          reservationId: $reservationId,
+          isReviewed: $isReviewed,
+      )  {
+        status
+    }
+}

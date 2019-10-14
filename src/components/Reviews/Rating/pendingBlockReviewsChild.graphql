@@ -1,0 +1,18 @@
+query pendingBlockReviewsChild ($blockUniqueId: Int!){
+  pendingBlockReviewsChild(blockUniqueId: $blockUniqueId){
+   id
+    childParentData
+    {
+      childId
+      childName
+      {
+        firstName
+        lastName
+        preferredName
+        childId
+        email
+        birthday
+      }
+    }
+  }
+}

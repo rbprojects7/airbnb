@@ -1,0 +1,107 @@
+$breakpoints: (
+  'medium':  996px, 'small': 941px, 'xsmall': 471px, 'xxsmall': 365px
+) !default;
+
+@mixin on($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+.bookItFormSection {
+  position: relative;
+  @include on('xsmall') {
+    top: -20px;
+
+    @include on('xxsmall') {
+      top: -40px;
+    }
+  }
+}
+
+.blockListWrapper {
+  z-index: 2001;
+  background: white;
+
+  .header {
+    font-size: 1.2em;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1001;
+    background: linear-gradient(to right, #FF6275 10%, #FF6B8F 20%, #FF6B90 30%, #FF8D6C 75%, #FFB73E 100%);
+    color: white;
+  }
+  .list{
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid darken(white, 20);
+    border-top: 0;
+    padding: 0 5px 20px 5px;
+    background: white;
+  }
+  .dayWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+
+    .dateWrapper {
+      width: 190px;
+    }
+    .hoursWrapper{
+      display: flex;
+      //  flex
+      //    display: flex;
+      //  justify-items: flex-end;
+    }
+  }
+  .blockListItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1002;
+    padding: 5px 10px 0 10px;
+    .button{
+      text-align: center;
+      padding: 6px 0;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #6C68C6;
+    .priceWrapper {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .hoursWrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .headerLabelWrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.spaceTop {
+  margin-top: 24px !important;
+}
+
+
+
+.bookItPanel {
+  background-color: #fff;
+  border-radius: 0;
+  position: relative;
+}

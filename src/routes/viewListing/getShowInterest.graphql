@@ -1,0 +1,27 @@
+ query getShowInterest($listId: Int){
+        getShowInterest(listId: $listId) {
+            id
+            listId
+            beforeSunday
+            middleSunday
+            afterSunday
+            beforeMonday
+            middleMonday
+            afterMonday
+            beforeTuesday
+            middleTuesday
+            afterTuesday
+            beforeWednesday
+            middleWednesday
+            afterWednesday
+            beforeThursday
+            middleThursday
+            afterThursday
+            beforeFriday
+            middleFriday
+            afterFriday
+            beforeSaturday
+            middleSaturday
+            afterSaturday
+        }
+      }

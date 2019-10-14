@@ -1,0 +1,65 @@
+/** Common - Start **/
+
+.noPadding {
+    padding: 0px;
+}
+
+.noMargin {
+    margin: 0px;
+}
+
+/** Common - End **/
+
+/** Banner caption - Start **/
+
+.bannerCaptionContainer {
+    position: relative;
+    text-align: center;
+}
+
+.bannerCaptionText {
+    font-family: inherit;
+    font-size: 45px;
+    line-height: 65px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #646F79;
+    margin: 0px;
+    font-weight: 200;
+}
+
+.bannerCaptionHighlight {
+    color: #151B26;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 65px;
+}
+
+.bannerSubText {
+    color: #646F79;
+}
+
+.space3 {
+    margin-bottom: 20px;
+    padding-top: 48px;
+}
+
+@media screen and (max-width: 767px) {
+    .space3 {
+      padding-top: 0;
+    }
+    .bannerCaptionContainer {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .bannerCaptionHighlight {
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .bannerCaptionText {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+/** Banner caption - End **/

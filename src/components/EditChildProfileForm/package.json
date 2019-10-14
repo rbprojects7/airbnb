@@ -1,0 +1,6 @@
+{
+  "name": "EditChildProfileForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EditChildProfileForm.js"
+}

@@ -1,0 +1,61 @@
+query getItinerary ($reservationId: Int!){
+  getItinerary(reservationId: $reservationId){
+    id
+    listId
+    hostId
+    guestId
+    checkIn
+    checkOut
+    guestServiceFee
+    total
+    guests
+    currency
+    confirmationCode
+    reservationState
+    
+    listData {
+      id
+      title
+      street
+      city
+      state
+      country
+      zipcode
+      reviewsCount,
+      reviewsStarRating,
+      bookingType,
+      listingData {
+        checkInStart
+        checkInEnd
+      }
+      coverPhoto
+      listPhotos {
+        id
+        name
+      }
+    }
+    messageData {
+      id
+    }
+    hostData {
+      profileId
+      displayName
+      picture
+    }
+    chosenBlockData{
+      id
+      reservationId
+      blockId
+      date
+      startTime
+      endTime
+    }
+    childParentData{
+      id
+      reservationId
+      userId
+      isParent
+      childId
+    }
+  }
+}

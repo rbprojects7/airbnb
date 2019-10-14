@@ -1,0 +1,44 @@
+@import '../common.css';
+.starReview {
+    display: inline;
+    position: relative;
+    float: left;
+}
+
+.starReviewTitle {
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.noPadding {
+    padding: 0 !important;
+}
+
+.textwrap {
+    overflow-wrap: break-word;
+}
+
+.strengthTitle {
+    color: #767676;
+    margin: 0 auto;
+}
+
+.panelContainer {
+    background: #ddd;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 992px) {
+    .starReviewTitle {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .strenthpanelMargin{
+        margin-left: -15px;
+    }
+}
+
+.noMargin{
+    margin:0px !important;
+}

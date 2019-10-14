@@ -1,0 +1,6 @@
+{
+    "name": "ImageNewsFeed",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./ImageNewsFeed.js"
+}

@@ -1,0 +1,35 @@
+query ManageListings{
+    ManageListings {
+        id
+        title
+        city
+        updatedAt
+        coverPhoto
+        isPublished
+        isReady
+        isDeleted
+        listPhotos{
+            id
+            name
+        }
+        settingsData {
+            listsettings {
+                id
+                itemName
+            }
+        }
+        listingSteps {
+            id
+            step1
+            step2
+            step3
+        }
+        learningAimCount
+        user {
+              profile {
+                picture
+              }
+        }
+        reservationForListing
+    }
+  }

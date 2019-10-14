@@ -1,0 +1,13 @@
+query getBlockByReservation($listId: Int) {
+    getBlockByReservation(listId: $listId) {
+        id
+        blockUniqueId
+        reservationItemCount
+    	reservationItem {	
+      		id
+    	}
+   		sessionTime{
+    		date
+  		}
+    }
+}

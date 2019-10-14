@@ -1,0 +1,14 @@
+.mobile-hide {
+    display: none;
+}
+.mobile-show {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+    .mobile-hide {
+        display: block;
+    }
+    .mobile-show {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+query getReservationChildData ($reservationId: Int!){
+  getReservationChildData(reservationId: $reservationId){
+   isParentEnable
+   childParentData
+   {
+      id
+      userId
+      reservationId
+      isParent
+      childId
+      childName
+      {
+        id
+        preferredName
+        firstName
+        lastName
+        birthday
+        preferences
+        childId
+      }
+    }
+  }
+}

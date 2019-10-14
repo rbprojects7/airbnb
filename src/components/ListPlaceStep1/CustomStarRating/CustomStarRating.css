@@ -1,0 +1,42 @@
+.starRatingContainer {
+    font-size: inherit;
+    line-height: inherit;
+}
+.tooltiptext {
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -60px;
+    transition: opacity 0.3s;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.littleTypeTip {
+   margin-left: -76px; 
+}
+
+.significatTypeTip {
+   margin-left: -44px;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}

@@ -1,0 +1,95 @@
+.container{
+    background:  linear-gradient(to right, #6C68C6ff 0%, #514EA3ff 100%) !important;;
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+.mainSection{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.ButtonSection{
+    padding-top: 95px;
+}
+
+.btn{
+    background-color: #6C68C6;
+    color: #fff;
+    border-radius: 10px;
+    padding: 13px 18px;
+}
+
+.btn:hover, .btn:active, .btn:focus{
+    background-color:#514EA3;
+    color: #fff;
+}
+
+.subText{
+    font-size: 18px;
+    color: #fff;
+}
+
+.titleText{
+    line-height: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.noMargin{
+    margin: 0 auto;
+}
+
+.RowMarginBottom{
+    margin-bottom: 15px;
+}
+
+.secondSectionTextAlignment{
+    text-align: right;
+}
+
+
+.ButtonSectionHidden{
+        display: none
+    }
+
+@media screen and (max-width:768px){
+    .textAlignCenter{
+        text-align: center;
+    }
+    .ButtonSection{
+        padding-top: 100px !important;
+    }
+    .container{
+        background: #E9EEEF;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .noMarginMobileView{
+        margin: 0 auto;
+    }
+    .RowMarginBottom{
+      margin-bottom: 15px !important;
+    }
+
+}
+
+
+@media screen and (max-width:640px){
+    .ButtonSection{
+        padding-top: 20px !important;
+    }
+    .ButtonSectionHidden{
+        display: block !important;
+    }
+    .titleText{
+        font-size: 18px;
+        margin-top: 0px !important;
+   }
+    .subText {
+    font-size: 16px;
+    }
+    .secondSectionTextAlignment{
+      text-align: left;
+    }
+}

@@ -1,0 +1,26 @@
+query getMentorListing($listId:String!) {
+    getMentorListing (listId:$listId) {
+        id
+        userId
+        title
+        coverPhoto
+        country
+        city
+        state
+        personCapacity
+        bookingType
+        listPhotos {
+            id
+            name
+        }
+        user {
+            email
+            profile { 
+                profileId
+                displayName
+                firstName
+                picture
+            }
+        }
+    }
+}

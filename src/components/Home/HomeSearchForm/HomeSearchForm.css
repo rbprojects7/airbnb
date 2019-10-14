@@ -1,0 +1,335 @@
+/** Common - Start **/
+
+.btn {
+    padding: 7px 21px;
+    color: #484848;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btnBlock {
+    width: 100%;
+    position: relative;
+    white-space: normal;
+    display: block;
+}
+
+.homeSearchForm {
+  cursor: pointer;
+}
+
+.btnPrimary {
+    border-color: #FFB73E;
+    color: #151B26;
+    border-radius: 10px;
+    border-width: 4px;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 12px 5px !important;
+    text-transform: uppercase;
+}
+
+.btnlarge {
+    padding: 9px 27px;
+}
+
+.btnPrimary:hover, .btnPrimary:focus, .btnPrimary:active, .btnPrimary:active:hover, .btnPrimary:active:focus {
+    border-color: #FFB73E;
+    color: #FFF;
+    border-radius: 10px;
+    border-width: 4px;
+    background: #FFB73E;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 5px !important;
+}
+
+.btnPrimaryBorder {
+    border-color: #6C68C6;
+    color: #6C68C6;
+    background-color: #fff;
+}
+
+.btnPrimaryBorder:hover, .btnPrimaryBorder:focus, .btnPrimaryBorder:active, .btnPrimaryBorder:active:hover, .btnPrimaryBorder:active:focus {
+    border-color: #514EA3;
+    color: #514EA3;
+    background-color: #fff;
+}
+
+.formControlInput {
+    padding: 10px 35px 10px 38px;
+    height: 48px;
+    border-radius: 2px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #ffffff;
+    text-align: center;
+    text-transform: none !important;
+    text-align: left !important;
+    background: linear-gradient(to right, #FF6275 10%, #FF6B8F 20%, #FF6B90 30%, #FF8D6C 75%, #FFB73E 100%) !important;
+}
+
+.formControlSelect {
+    height: 40px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    max-width: 320px;
+    border: 1px solid #DBDBDB;
+    background-color: #fff;
+    color: #484848;
+    line-height: 24px;
+    display: block;
+    overflow: hidden;
+    appearance: none;
+}
+
+.noPadding {
+    padding: 0px !important;
+}
+
+.lableWidth {
+    position: relative;
+    float: left;
+    width: 30%;
+    left: -10px;
+    top: 5px;
+}
+
+.sliderWidth {
+    position: relative;
+    width: 67%;
+    float: left;
+    top: 1px;
+}
+
+.subText {
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: lowercase !important;
+    top: 2px;
+    font-size: 18px;
+    text-align: left !important;
+    margin-left: 0;
+}
+
+/** Common - End **/
+
+/** Search Form - Start **/
+
+.searchFormInputs {
+    display: table;
+    float: none;
+    position: relative;
+    table-layout: auto;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.searchForm {
+    border: 1px solid #dce0e0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 #dce0e0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.table {
+    width: 100%;
+    display: table;
+}
+
+.tableRow {
+    display: table-row;
+    width: 100%;
+}
+
+.tableCell {
+    display: table-cell;
+    float: none;
+    padding: 15px 16px 8px;
+    vertical-align: middle;
+}
+
+.location {
+    width: 30%;
+}
+
+.ages {
+    width: 60%;
+}
+
+.displayInline {
+    display: inline-block;
+}
+
+.guests {
+    width: 17%;
+}
+
+.label {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 12px;
+    white-space: nowrap;
+    font-weight: 500;
+    background: linear-gradient(to right, #6C68C6ff 0%, #514EA3ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input, .input:hover, .input:focus {
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 38px;
+}
+
+.inputPadding, .inputPadding:hover, .inputPadding:focus {
+    padding: 7px 15px;
+}
+
+::placeholder {
+    color: #ffffff
+}
+
+.searchButton {
+    padding: 14px 10px;
+}
+
+.selectPadding {
+    padding: 0px 15px;
+}
+
+.sliderPadding {
+    padding: 15px 16px 0px !important;
+}
+
+.sliderSpace {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.sliderBackground {
+    background: linear-gradient(to right, #FF6275 10%, #FF6B8F 20%, #FF6B90 30%, #FF8D6C 75%, #FFB73E 100%);
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .searchFormInputs {
+        padding: 0px;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .location, .ages, .guests {
+        width: 100%;
+    }
+    .tableCell {
+        border-right: 0px;
+        display: block;
+        text-align: center;
+        padding: 0 16px 16px;
+    }
+    .btnSm {
+        margin: 0 auto;
+        max-width: 120px;
+        /* margin-top: 16px; */
+    }
+    .smBottom {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .subText {
+      margin-left: -14px;
+    }
+    .inputPadding, .inputPadding:hover, .inputPadding:focus {
+        padding: 8px 0px;
+    }
+    .mobilePadding {
+        padding: 15px 16px 8px !important;
+    }
+    .selectPadding {
+        padding: 0px;
+    }
+    .smBottom {
+        margin-bottom: 16px;
+    }
+    .searchFormInputs {
+        padding: 0px;
+    }
+    .lableWidth {
+        text-align: center;
+        width: 100%;
+    }
+    .sliderWidth {
+        width: 100%;
+    }
+    .btnSm {
+        margin: 0 auto;
+        max-width: 120px;
+        /* margin-top: 16px; */
+    }
+    .btnPrimary {
+        /* border-color: #FF5F6C; */
+    }
+    .btnPrimary:hover, .btnPrimary:focus, .btnPrimary:active, .btnPrimary:active:hover, .btnPrimary:active:focus {
+        /* border-color: #FF5F6C; */
+    }
+}
+
+.geoSuggestContainer {
+    width: 100% !important;
+    margin: 0px !important;
+    cursor: pointer;
+}
+
+.ageRangeMinLabel {
+    display: inline;
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    color: #fff;
+}
+
+.ageRangeMaxLabel {
+    display: inline;
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    color: #fff;
+}
+
+/** Search Form - End **/
+
+@media screen and (max-width:320px) {
+    /* .btnPrimary {
+        border-color: #6C68C6;
+        background: linear-gradient(to right, #6C68C6ff 0%, #514EA3ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: currentcolor;
+        color: #6C68C6;
+        border-radius: 80px;
+    } */
+}
+
+.searchIcon {
+    min-height: 22px;
+    line-height: 18px;
+}

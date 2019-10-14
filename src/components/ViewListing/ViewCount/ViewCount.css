@@ -1,0 +1,12 @@
+@import '../common.css';
+
+.bookItMessage {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+
+s.viewContentPadding{
+  padding: 20px !important;
+}

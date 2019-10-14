@@ -1,0 +1,105 @@
+query cancellationData($reservationId: Int!, $userType: String!){
+  cancelReservationData(reservationId: $reservationId, userType: $userType){
+    id
+    listId
+    hostId
+    guestId
+    checkIn
+    checkOut
+    guests
+    basePrice
+    cleaningPrice
+    hostServiceFee
+    guestServiceFee
+    total
+    currency
+    confirmationCode
+    reservationState
+    listData {
+      id
+      title
+      listingData {
+        cancellation {
+          id
+          policyName
+          priorDays
+          accommodationPriorCheckIn
+          accommodationBeforeCheckIn
+          accommodationDuringCheckIn
+          guestFeePriorCheckIn
+          guestFeeBeforeCheckIn
+          guestFeeDuringCheckIn
+          hostFeePriorCheckIn
+          hostFeeBeforeCheckIn
+          hostFeeDuringCheckIn
+          isEnable
+        }
+        experienceType
+        cancellationDescription
+      }
+      coverPhoto
+      listPhotos {
+          id
+          name
+      }
+      city
+      state
+      country
+      
+      cancellationPolicy {
+        id
+        listId
+        cancellationType
+        policy {
+          id
+          policyContent
+        }
+      }
+    }
+    messageData {
+      id
+    }
+    hostData {
+      profileId
+      firstName
+      picture
+      userData {
+        email
+      }
+    }
+    guestData {
+      profileId
+      firstName
+      lastName
+      displayName
+      picture
+      userData {
+        email
+      }
+    }
+    chosenBlockData {
+          date
+          startTime
+          endTime
+          id
+          blockId        
+      }
+    isParentEnable
+    childParentData {
+      id
+      reservationId
+      userId
+      isParent
+      childId
+      childName{
+        id
+        firstName
+        lastName
+      }
+    }
+    cancellationDetails{
+      learnerId
+      sessionId
+    }
+  }
+}

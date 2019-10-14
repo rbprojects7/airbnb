@@ -1,0 +1,225 @@
+@import '../variables.css';
+
+.root {
+  color: #ffffff;
+  padding: 10px 0px;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-container-width);
+  font-size: 1.5em; /* ~24px */
+  display: block;
+}
+
+.feedbackContainer {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.feedbackRow {
+padding-top: 6%;
+}
+
+.btnAlign{
+  text-align: center;
+margin-top: 36px;
+}
+
+.feedbackBox {
+  padding: 25px 30px;
+}
+
+.feedbackBox:last-of-type {
+
+}
+
+.feedbackIcon {
+  text-align: center;
+  border-radius: 50%;
+  background-color: #6C68C6;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 55px;
+  font-size: 30px;
+}
+
+.feedbackIcon>img {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  /* padding: 10px; */
+}
+
+.feedbackContent {
+}
+
+.landingLabel {
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.landingCaption {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.43;
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.modalCaptionLink {
+    color: #F8C769;
+}
+
+.containerTitle {
+    font-size: 45px;
+    letter-spacing: -0.8px;
+    font-weight: 700;
+    padding-top: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.imageBanner{
+    background-size: cover;
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    background: linear-gradient(67deg, #ff5f6c 0%,#FF5F6C 33%,#ff6b90 67%,#ffb73e 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.bannerHeader{
+  color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    min-height: 570px;
+}
+
+.bannerTitle{
+    font-size: 45px;
+    letter-spacing: -0.8px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.space6{
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 767px) {
+  .landingCaption {
+    text-align: center;
+  }
+  .imageBanner {
+    background: linear-gradient(25deg, #ff5f6c 0%,#FF5F6C 33%,#ff6b90 67%,#ffb73e 100%);
+  }
+  .landingLabel{
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .landingCaption {
+    text-align: center;
+  }
+  .imageBanner{
+    max-height: 100%;
+  }
+  .containerTitle{
+      font-size: 30px;
+  }
+  .feedbackContainer{
+    margin-top: 24px;
+  }
+}
+.button {
+  border-radius: 4px;
+  border-color: #6C68C6;
+  background: #6C68C6;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 216px;
+  height: 48px;
+}
+
+.button:hover, .button:focus, .button:active,
+.button:active:hover, .button:active:focus {
+  border-color: #514EA3;
+  background-color: #514EA3;
+  color: #ffffff;
+}
+
+.btnPrimaryBorder {
+   border-color: #ffffff;
+   color: #ffffff;
+   background-color:transparent;
+   border-width: 2px !important;
+}
+
+.btnPrimaryBorder:hover, .btnPrimaryBorder:focus, .btnPrimaryBorder:active,
+.btnPrimaryBorder:active:hover, .btnPrimaryBorder:active:focus {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.buttonWidth{
+  max-width: 500px;
+}
+
+.btnRight{
+  margin-left: 20px;
+}
+.noPadding{
+    padding: 0px;
+}
+
+@media screen and (max-width: 640px) {
+.smSpace{
+    margin-bottom: 12px;
+}
+.smPadding{
+    padding: 0px;
+}
+.bannerText{
+    top: 15%;
+    }
+.topImageBanner{
+    max-height: 400px;
+}
+.TopBannerHeader{
+    min-height: 400px;
+}
+.bannerDescription{
+    font-size: 24px;
+}
+.bannerSubTitle{
+    font-size: 18px;
+}
+.btnRight{
+  margin-left: 0px;
+}
+}

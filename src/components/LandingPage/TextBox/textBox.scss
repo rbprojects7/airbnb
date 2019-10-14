@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+.mainContainer {
+  background-color: #E9EEEF;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  .bottomLine {
+    background: linear-gradient(to right, #ff5f6c 0%,#ff5f6c 33%,#ff6b90 67%,#ffb73e 100%);
+    height: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  .textWrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0 10% 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .titleContainer {
+      color: #151B26;
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 58px;
+    }
+    .textContentContainer {
+      color: #646F79;
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainContainer {
+    background-color: #fff;
+    height: 100%;
+    margin-bottom: 20px;
+    .bottomLine {
+      display: none;
+    }
+    .textWrapper {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      .titleContainer {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+      }
+      .textContentContainer {
+        color: #646F79;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+
+}

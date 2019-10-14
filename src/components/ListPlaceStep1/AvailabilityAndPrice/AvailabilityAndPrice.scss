@@ -1,0 +1,239 @@
+$breakpoints: (
+  'small':  767px, 'exstrasmall': 480px
+) !default;
+
+@mixin on($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@include on('small') {
+  .landingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .headerSection {
+      .checkSection {
+        display: flex;
+
+        .checkPart {
+          padding: 15px;
+        }
+      }
+    }
+
+    @include on('exstrasmall') {
+      margin-top: 64px;
+
+      .headerSection {
+        .checkSection {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .landingContent {
+        padding-left: 0;
+
+        .blockWrapper {
+          max-width: 80vw;
+          width: auto;
+        }
+
+        .dayWrapper {
+          display: flex;
+          flex-flow: row wrap;
+
+          .dateLabel {
+            flex: 0 1 100%;
+          }
+        }
+      }
+    }
+
+    .landingContent {
+      padding-bottom: 10px;
+      margin: 10px 0;
+    }
+
+    .formGroup {
+      width: 100%;
+    }
+  }
+}
+
+.headerSection {
+  margin-bottom: 20px;
+
+  .headerTitle {
+    line-height: 26px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #484848;
+  }
+
+  .checkSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .checkPart, .checkPart {
+      padding: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .checkText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .checkIcon {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          .iconTimes {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 42px;
+            height: 30px;
+            color: red;
+          }
+
+          & > * {
+            margin: 3px 0 3px 6px;
+            color: #767676;
+          }
+        }
+      }
+    }
+  }
+}
+
+.addBlockButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  padding-right: 5px;
+}
+
+.icon {
+  color: #00B0CD;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 5px;
+
+  &.remove {
+    position: absolute;
+    color: #e12a2abd;
+    font-size: 20px;
+    right: 20px;
+    padding: 0;
+  }
+
+  &.toggleUp,
+  &.toggleDown {
+    padding: 0;
+    font-size: 23px;
+  }
+
+  &.toggleUp {
+    bottom: 2px;
+  }
+}
+
+.blockWrapper {
+  cursor: pointer;
+  flex-direction: row;
+  position: relative;
+  height: 40px;
+  width: 415px;
+}
+
+.timePicker {
+  input {
+    min-width: 100px;
+    max-width: 110px;
+  }
+}
+
+.priceInputWrapper {
+  margin-left: 25px;
+  width: 220px;
+}
+
+.dayWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.fakeDayPicker {
+  display: none;
+}
+
+.dayPicker {
+  padding-top: 20px;
+}
+
+.DayPicker-Day {
+  width: 36px;
+  height: 36px;
+}
+
+.DayPicker-Month {
+  border-spacing: 4px;
+  border-collapse: separate;
+}
+
+.dateLabel {
+  margin-right: 10px;
+  min-width: 150px;
+  float: left;
+}
+
+.blockHeaderSections {
+  position: absolute;
+  height: 40px;
+  line-height: 40px;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.line {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  border-bottom: 1px solid lighten(black, 80);
+}
+
+.blockLabel {
+  cursor: pointer;
+  background-color: white;
+  position: absolute;
+  color: lighten(black, 50);
+  left: 50px;
+}
+
+.block {
+  @include on('small') {
+    ul {
+      padding-left: 20px;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.timeLabel.timeLabel.timeLabel {
+  padding: 0 5px;
+}

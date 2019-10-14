@@ -1,0 +1,15 @@
+mutation writeChildReview(
+    $reservationId: Int!,
+    $listId: Int!,
+    $receiverId: String!,
+    $learningAimsReviewContent: String!
+){
+    writeChildReview(
+        reservationId: $reservationId,
+        listId: $listId,
+        receiverId: $receiverId,
+        learningAimsReviewContent: $learningAimsReviewContent
+     ) {
+        status
+    }
+}

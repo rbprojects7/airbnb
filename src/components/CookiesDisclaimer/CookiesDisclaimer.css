@@ -1,0 +1,73 @@
+.cookiesBackground {
+    background-color: #151B26 !important;
+    padding: 10px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+.labelText {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+}
+.paddingSpace{
+padding-left:10px;
+}
+.linkStyle {
+    color: #ffffff !important;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 16px;
+}
+.button {
+    background-color: #E9EEEF;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px auto;
+    z-index:9;
+    border: none;
+}
+.button:hover, .button:focus, .button:active,
+.button:active:hover, .button:active:focus {
+  background-color: #646F79;
+  color: #ffffff;
+}
+
+.fixedPosition{
+    position:fixed !important;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1005;
+ }
+
+ .cookieContentMargin{
+     margin-top: 10px;
+ }
+
+@media screen and (min-width:768px){
+    .btnlarge {
+   padding: 9px 27px;
+ }
+}
+@media screen and (max-width: 480px) {
+    .button {
+    float:left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    }
+    .labelText {
+     font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .buttonResponsive{
+        width: 100% !important;
+    }
+}

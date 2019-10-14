@@ -1,0 +1,59 @@
+@import '../common.css';
+.sectionCaptionLink {
+  font-size: 14px;
+  color: #00B0CD;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.sectionCaptionLink:hover, .sectionCaptionLink:active, .sectionCaptionLink:focus {
+  color: #00B0CD;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.titleMarginLeft {
+  margin-left: 3px;
+}
+
+.cancelpolicyMargin {
+  padding-bottom: 10px;
+}
+
+.mentorBorderTop {
+  border-top: 1px solid #dce0e0;
+}
+
+.mentorMarginTop {
+  margin-top: 15px;
+}
+
+.mentorBorderBottom {
+  border-bottom: 1px solid #dce0e0;
+  padding-bottom: 12px;
+}
+
+.unorderPaddingLeft{
+  padding-left: 15px;
+}
+
+@media screen and (min-width:768px) {
+  .spiltContainer {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+ 
+}
+
+@media screen and (max-width:768px){
+   .titleMargin{
+     margin-top: 6px;
+     margin-bottom: 6px;
+   }
+   .subTitleMargin{
+     margin-top: 6px;
+   }
+}

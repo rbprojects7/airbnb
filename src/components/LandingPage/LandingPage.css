@@ -1,0 +1,192 @@
+.root {
+  padding: 70px 0px;
+
+}
+
+.alignToRight {
+  text-align: right;
+  padding: 0 0 0 15px;
+}
+
+.marginSize {
+  margin-bottom: 30px !important;
+  /*padding: 0 139px;*/
+  max-width: 1088px;
+  align-content: center;
+}
+
+.centerItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImage {
+  height: 700px;
+  max-width: 100%;
+  background-size: auto 100%;
+  background: center no-repeat;
+}
+
+.bgColor {
+  background-color: #fafafa;
+  height: 450px;
+  width: 100%;
+}
+
+.textContainer {
+
+  max-Width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.textPadding {
+  padding-top: 80px;
+}
+
+.textStyleHead {
+  text-align: left;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: normal;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.space {
+  margin-bottom: 12px;
+}
+
+.textStyle {
+  color: #484848;
+  line-height: 26px !important;
+  letter-spacing: normal !important;
+  font-size: 19px;
+
+}
+
+.decriptionStyle {
+  color: #484848;
+  line-height: 26px !important;
+  letter-spacing: normal !important;
+  font-size: 19px;
+}
+
+.textAlign {
+  text-align: right;
+}
+
+.textBold {
+
+  font-weight: 700;
+
+}
+
+.textItalic {
+
+  font-style: italic;
+
+}
+
+.desktopView {
+  display: block;
+}
+
+.mobileView {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .noPadding {
+    padding-left: 0px;
+  }
+}
+
+.textBoxContainer {
+  height: 690px;
+}
+
+@media screen and (max-width: 720px) {
+  .desktopView {
+    display: none;
+  }
+
+  .textBoxContainer {
+    height: auto;
+    padding: 40px;
+  }
+
+  .mobileView {
+    display: block;
+  }
+
+  .space {
+    margin-bottom: 12px;
+  }
+
+  .spaceTop {
+    margin-top: 12px;
+  }
+
+  .bgImage {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+    background-size: contain;
+    margin-bottom: 20px;
+  }
+
+  .bgImageBottom {
+    margin-bottom: 0;
+  }
+
+  .bgImage2 {
+    margin-top: 20px;
+  }
+
+  .bgColor {
+    height: auto;
+    width: 100%;
+  }
+
+  .textPadding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .textContainer {
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+
+  .textStyle2 {
+    font-size: 26px;
+    line-height: 1.22;
+    letter-spacing: -2px;
+  }
+
+  .textStyle {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .textBoxContainer{
+    height: auto;
+    padding: 40px;
+  }
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
+  }
+
+}

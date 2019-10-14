@@ -1,0 +1,60 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 0;
+  }
+}
+.titleText {
+    color: #646F79;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 15px 0 0;
+}
+
+.spaceIcon {
+    color: #646F79;
+    font-size: 24px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.blockInlineTitle {
+    display: inline-block;
+}
+
+.blockInline {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.titleCenter {
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+  .titleText {
+    font-size: 18px;
+    line-height: 26px;
+  }
+    .spaceIcon {
+        color: #646F79;
+        font-size: 24px;
+        margin: 0px 10px
+    }
+    .spaceTop {
+        margin-top: 20px;
+    }
+    .blockInlineTitle {
+        display: block;
+        padding: 0 10px;
+    }
+    .blockInline {
+        padding: 0px;
+    }
+}

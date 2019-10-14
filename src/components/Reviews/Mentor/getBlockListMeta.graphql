@@ -1,0 +1,32 @@
+query getBlockListMeta($listId: Int) {
+  getBlockListMeta(listId: $listId) {
+    id
+    title
+    description
+    city
+    state
+    coverPhoto
+    listPhotos
+    {
+      id
+      name
+    }
+    isListOwner
+    user
+    {
+      email
+      profile {
+        profileId
+        firstName
+        lastName
+        displayName
+        dateOfBirth
+        picture
+        location
+        info
+        homeTown
+        createdAt
+      }
+    }
+  }
+}

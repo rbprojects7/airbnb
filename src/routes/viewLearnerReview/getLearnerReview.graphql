@@ -1,0 +1,42 @@
+query getLearnerReview($reservationId: Int){
+    getLearnerReview(reservationId: $reservationId){
+        mentorReviewId
+        blockId
+        blockUniqueId
+        reservationId
+        listId
+        mentorId
+        parentId
+        childId
+        reservationlearningId
+        learningAimReviewRating
+        learningAimsReviewContent
+        isParentEnable
+        createdAt
+        updatedAt
+        isReviewed
+        mentorData {
+            firstName
+            lastName
+            displayName
+            dateOfBirth
+            picture
+            location
+            reviewsCount
+        }
+        parentData {
+            firstName
+            lastName
+            displayName
+            dateOfBirth
+            picture
+            location
+        }
+        childData{
+            firstName
+            lastName
+            preferredName
+            birthday
+    }
+    }
+}

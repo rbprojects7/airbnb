@@ -1,0 +1,16 @@
+query getProfileData($userId: String) {
+    getProfileData(userId: $userId) {
+      userId
+      profileId
+      firstName
+      lastName
+      dateOfBirth
+      picture
+      gender
+      phoneNumber
+      preferredLanguage
+      preferredCurrency
+      info
+      location
+    }
+  }

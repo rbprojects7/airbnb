@@ -1,0 +1,16 @@
+query getMentorReviews ($blockUniqueId: Int!, $listId: Int, $parentId: String, $childId: Int, $reservationId: Int, $isParentEnable: Boolean){
+  getMentorReviews(blockUniqueId: $blockUniqueId, listId: $listId, parentId: $parentId, childId: $childId, reservationId:$reservationId, isParentEnable:$isParentEnable){
+   blockId
+   blockUniqueId
+   reservationId
+   listId
+   mentorId
+   parentId
+   childId
+   reservationlearningId
+   learningAimReviewRating
+   learningAimsReviewContent
+   isParentEnable
+   isReviewed
+   }
+}

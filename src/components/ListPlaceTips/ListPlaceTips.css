@@ -1,0 +1,46 @@
+@import '../../components/variables.css';
+
+.helpPanelContainer {
+	max-width: 320px;
+}
+
+.helpPanel {
+  margin-top: 60px;
+  border-radius: 4px;
+  width: 100%;
+	background: #FFF;
+}
+
+.helpPanelText {
+	font-size: 16px;
+  line-height: 150%;
+  color: #767676;
+}
+
+.helpPanelTextTitle {
+	color: #2d2d2d;
+	display: block;
+	width: 100%;
+}
+.imageContent {
+    min-height: 560px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.noPadding{
+  padding: 0px;
+}
+
+.textJustify{
+  text-align: justify;
+}
+@media screen and (max-width: 768px){
+	.helpPanel{
+		margin: 20px 0px 0px;
+	}
+}
