@@ -103,7 +103,7 @@
     "redux-thunk": "^2.1.0",
     "request": "^2.81.0",
     "rheostat": "^2.1.0",
-    "sequelize": "^3.30.1",
+    "sequelize": "^5.15.1",
     "serialize-javascript": "^1.3.0",
     "sharp": "^0.20.8",
     "source-map-support": "^0.4.11",
