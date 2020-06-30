@@ -28,7 +28,7 @@
     "csv-express": "^1.2.1",
     "express": "^4.14.1",
     "express-graphql": "^0.6.3",
-    "express-jwt": "^5.1.0",
+    "express-jwt": "^6.0.0",
     "express-request-language": "^1.1.9",
     "fastclick": "^1.0.6",
     "fs-extra": "^2.0.0",
