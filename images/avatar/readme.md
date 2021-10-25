@@ -1,1 +1,0 @@
-User Avatar Images
